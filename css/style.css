@@ -1,0 +1,24 @@
+body {
+    background-color: #d19af1;
+
+}
+
+.cool {
+    visibility: hidden;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    transition: background-color 1s;
+}
+
+.cool.red {
+    visibility: visible;
+    background-color: red
+}
+
+.cool.blue {
+    background-color: blue
+}
+/* asdfsdfasdf */
+
+ 

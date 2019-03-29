@@ -1,0 +1,88 @@
+html, body {
+    margin: 0;
+}
+
+h1 {
+    margin-left: 20px
+}
+
+a {
+    margin-left: 20px
+}
+
+.left {
+    margin-top: 0;
+    position: fixed;
+    background-color: aquamarine;
+    width: 50%;
+    height:100%;
+    left: 0;
+}
+
+.right {
+    position: fixed;    background-color: mediumturquoise;
+    width: 50%;
+    height:100%;
+    right: 0;
+}
+
+.rocket {
+    position: absolute;
+    background-color: white;
+    bottom: 20px;   
+    left: 50%;
+    width: 20px;
+    height: 120px;
+    transition: bottom 4000ms
+}
+
+
+
+.flames{
+    position: absolute;
+    visibility: hidden;
+    background-color: red;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+}
+
+.flames.show {
+    visibility: visible;
+}
+
+body.body-state1 .rocket {
+    transition: none;
+}
+
+/* distance for rocket to fly */
+body.body-state3 .rocket,
+body.body-state4 .rocket{
+    bottom: 100%;
+}
+
+
+.state1,
+.state2,
+.state3,
+.state4,
+.state5 {
+    display: none;
+}
+
+
+body.body-state1 .state1 {display: block;}
+body.body-state2 .state2 {display: block;}
+body.body-state3 .state3 {display: block;}
+body.body-state4 .state4 {display: block;}
+body.body-state5 .state5 {display: block;}
+
+.ground { 
+    position: absolute;
+    bottom: 0;
+    background-color: green;
+   
+    width: 100%;
+    height: 40px;
+}
+
